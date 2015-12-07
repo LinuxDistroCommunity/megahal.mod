@@ -41,7 +41,7 @@ set learnfreq 2
 # Valid values are 1-5
 # 2 is highly recommended, 3 is much more boring but it will also produce much more coherent sentences
 # 1 will make it babble incoherently a lot of the time and 4-5 will turn it into a parrot instead of a fun AI
-set maxcontext 2
+setmaxcontext 2
 
 # Surprise mode on or off (0/1)
 # This changes the way it constructs sentences. 
@@ -66,7 +66,7 @@ catch "unbind pub - Kuro-sama: *pub:Kuro-sama:"
 bind pubm - "*${nick}*" *pub:Kuro-sama:
 catch "unbind dcc - Kuro-sama *dcc:Kuro-sama"
 bind dcc - $nick *dcc:Kuro-sama
-set megabotnick $nick
+setmegabotnick $nick
 
 # Save and trim the brain once every hour
 bind time - "35 * * * *" auto_brainsave
